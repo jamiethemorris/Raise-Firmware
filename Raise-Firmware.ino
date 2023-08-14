@@ -56,6 +56,9 @@
 
 #include "attiny_firmware.h"
 
+// Additional Plugins
+#include "GraveEscape.h"
+
 enum { QWERTY, NUMPAD, _LAYER_MAX }; // layers
 
 /* This comment temporarily turns off astyle's indent enforcement so we can make
@@ -199,7 +202,8 @@ KALEIDOSCOPE_INIT_PLUGINS(
     EscapeOneShot,
     LayerFocus,
     EEPROMUpgrade,
-    HostPowerManagement
+    HostPowerManagement,
+    GraveEscape
   );
 
 void setup()

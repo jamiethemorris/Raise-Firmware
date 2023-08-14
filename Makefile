@@ -32,7 +32,7 @@ else
     ifeq ($(UNAME_S),Darwin)
         PLATFORM = DARWIN
         ARDUINO_PATH=/Applications/Arduino.app/Contents/MacOS
-		ARDUINO=${ARDUINO_PATH}/arduino
+		ARDUINO=${ARDUINO_PATH}/Arduino
     endif
 endif
 
@@ -51,8 +51,8 @@ ifeq ($(PLATFORM),LINUX)
     BACKUP_PORT =/dev/ttyACM0
 endif
 ifeq ($(PLATFORM),DARWIN)
-    DEVICE_PORT =/dev/tty.usbmodem14801
-    BACKUP_PORT =/dev/cu.usbmodem14801
+    DEVICE_PORT =/dev/tty.usbmodem3201
+    BACKUP_PORT =/dev/cu.usbmodem3201
 endif
 
 # Library & build target configuration

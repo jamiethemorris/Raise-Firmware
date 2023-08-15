@@ -33,6 +33,10 @@ namespace kaleidoscope
             {
                 mapped_key = Key_Backtick; // Unshifted backtick
             }
+            else
+            {
+                return kaleidoscope::EventHandlerResult::OK; // Keep as escape key
+            }
 
             return kaleidoscope::EventHandlerResult::OK;
         }
